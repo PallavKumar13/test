@@ -1,0 +1,24 @@
+.grid-container{
+    display:grid;
+    padding: 5%;
+    width: 100%;
+    grid-template-columns: 15% 54% 26%;
+    grid-gap: 2%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-image:linear-gradient(-90deg, #EECDA3,#EF629F);
+}
+@media only screen and (max-width: 600px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: 100%;
+        text-align: center;
+        grid-gap: 2px;
+        background-image:linear-gradient(to top, rgb(14, 14, 14),rgb(63, 63, 63),rgb(105, 105, 105),rgb(173, 172, 172));
+    }
+    .grid-item:nth-of-type(1) { order: 2; }
+    .grid-item:nth-of-type(2) { order: 1; }
+    .grid-item:nth-of-type(3) { order: 3; }
+    
+}
